@@ -3,6 +3,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 
 
 import { CV } from "./pages/cv";
@@ -10,12 +11,17 @@ import { CV } from "./pages/cv";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/cv">
-          <CV />
-        </Route>
-      </Switch>
+      <HelmetProvider>
+        <Switch>
+          <Route path="/cv" component={CV} />
+
+        </Switch>
+
+      </HelmetProvider>
+
     </Router>
+
+
 
   );
 }

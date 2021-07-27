@@ -8,6 +8,7 @@ export const MICHAEL = {
         { icon: "fa fa-phone", data: '9 94493861', islink: false },
         { icon: "fa fa-envelope fa-phone", data: 'mapo.umb@gmail.com', islink: false },
         { icon: "fa fa-github", data: 'https://github.com/Isael03', islink: true },
+        { icon: "fa fa-linkedin-square", data: 'https://linkedin.com/in/michael-puelle/', islink: true },
     ],
     education: [
         { years: 'Actualidad', degree: '', location: 'Cursos online' },

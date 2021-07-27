@@ -1,9 +1,22 @@
-import React from 'react';
-import { MICHAEL } from '../data'
-import '../cv.css'
-//import html2pdf from 'html2pdf.js';
 
-export const CV = () => {
+import { MICHAEL } from '../data'
+import '../styles/cv.css'
+//import html2pdf from 'html2pdf.js';
+import { Helmet } from 'react-helmet-async';
+
+
+export const CV = () => (
+    <>
+        <Helmet>
+            <title>Curriculum</title>
+        </Helmet>
+        <CVContainer />
+    </>
+
+)
+
+
+export const CVContainer = () => {
     const data = MICHAEL
 
     /*    const exportPdf = () => {
@@ -51,11 +64,12 @@ export const CV = () => {
     return (
         <>
 
+
             <div className="container" id='cv'>
                 <div className="left_Side">
                     <div className="profileText">
                         <div className="imgBx">
-                            <img src="conversaciones.jpg" alt="" />
+                            <img src="images/foto.png" alt="foto_cv" />
                         </div>
                         <h2>{data.name}<br /> <span>{data.rol}</span></h2>
                     </div>
@@ -174,13 +188,6 @@ export const CV = () => {
                                 </ul>
                             </div>
                         </div>
-
-                        {/*    <div className="box">
-                            <h4>Javascript</h4>
-                            <div className="percent">
-                                <div style={{ width: '90%' }}></div>
-                            </div>
-                        </div> */}
                     </div>
 
 
