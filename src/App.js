@@ -13,14 +13,14 @@ function App() {
   return (
     <Router>
       <HelmetProvider>
-
+        <Redirect to="/cv" />
         <Switch>
-          <Redirect from="/" to="/cv" />
           <Route exact path="/" />
-
         </Switch>
         <Switch>
-          <Route path="/cv" component={CV} />
+          <Route path="/cv">
+            <CV />
+          </Route>
 
         </Switch>
 

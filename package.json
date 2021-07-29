@@ -2,7 +2,7 @@
   "name": "cv-porfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Isael03.github.io/cv_react",
+  "homepage": "https://michaelpuelle.tk",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -15,7 +15,7 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy":"npm run build && echo michaelpuelle.tk > ./build/CNAME",
     "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
