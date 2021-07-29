@@ -1,4 +1,8 @@
-## Curriculum vitae de dos columnas
+## Curriculum vitae personal
 
 Construido con create-react-app
-http://localhost:3000/cv
+
+Archivo data.js con la informacion del curriculum.
+
+`npm install && npm start`
+`URL de ejecución -> http://localhost:3000/cv`
