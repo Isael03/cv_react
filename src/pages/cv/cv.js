@@ -1,8 +1,8 @@
-
-import { MICHAEL } from '../data'
-import '../styles/cv.css'
+import { MICHAEL } from './data'
+import './cv.css'
 //import html2pdf from 'html2pdf.js';
 import { Helmet } from 'react-helmet-async';
+import foto from './foto.png'
 
 
 export const CV = () => (
@@ -69,7 +69,7 @@ export const CVContainer = () => {
                 <div className="left_Side">
                     <div className="profileText">
                         <div className="imgBx">
-                            <img src="images/foto.png" alt="foto_cv" />
+                            <img src={foto} alt="foto_cv" />
                         </div>
                         <h2>{data.name}<br /> <span>{data.rol}</span></h2>
                     </div>
